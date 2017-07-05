@@ -39,10 +39,32 @@
 #b2
 { float:right;}
 </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/Programacion (1).jpg','imagenes/compeprog.jpg','imagenes/compemecaind.jpg','imagenes/compeelectrI.JPG','imagenes/compelogis.jpg')">
 
 <div data-role="page" id="Principal" data-theme="a">
  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
@@ -162,8 +184,7 @@
    <h2>TÉCNICO EN PROGRAMACIÓN<br>
 Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.<br>
 COMPETENCIAS PROFESIONALES<br></h2>
-<img src="imagenes/compeprog.jpg" width="50%" height="50%">
-<img src="imagenes/programa_cion.jpg" width="50%" height="50%">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image66','','imagenes/compeprog.jpg',1)"><img src="imagenes/programa_cion.jpg" alt="" width="1036" height="629" id="Image66"></a>
 <h2>PERFIL DE EGRESO<br>
 
 La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:<br>
@@ -182,7 +203,17 @@ Analista de programas de cómputo<br>
  Escuelas de computación del sector público<br>
  </h2>
  </div>
-
+ <div  class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://cbtis016.edu.mx/index.php/oferta-educativa/programacion" data-role="button" >
+  <h2>CBTis16</h2>
+  </a>
+  </li>
+</ul>
+</div>
+</div>
  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
 <h4>PAOLA CONSTANZA ELGUEA PEREZ</h4>
 <img src="res/android/mdpi.png" width="56" height="46">
@@ -224,9 +255,7 @@ Analista de programas de cómputo<br>
 Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.<br>
 
 COMPETENCIAS PROFESIONALES<br>
-<img src="imagenes/compemecaind.jpg" width="50%" height="50%">
-<img src="imagenes/curriculameca.jpg" width="50%" height="50%">
-PERFIL DE EGRESO<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image65','','imagenes/compemecaind.jpg',1)"><img src="imagenes/curriculameca.jpg" alt="" width="919" height="599" id="Image65"></a> PERFIL DE EGRESO<br>
 
 Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:<br>
 
@@ -240,7 +269,17 @@ Durante el proceso de formación de los cinco módulos, el estudiante desarrolla
 Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.
 </h2>
 </div>
-
+<div  class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://cbtis016.edu.mx/index.php/oferta-educativa/mecanica-industrial" data-role="button" >
+  <h2>CBTis16</h2>
+  </a>
+  </li>
+</ul>
+</div>
+</div>
  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
 <h4>PAOLA CONSTANZA ELGUEA PEREZ</h4>
 <img src="res/android/mdpi.png" width="56" height="46">
@@ -279,9 +318,7 @@ Industrias de transformación y procesos como: Textiles, del plástico, petroler
 La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.<br>
 
 COMPETENCIAS PROFESIONALES<br>
-<img src="imagenes/compeelectrI.JPG" width="50%" height="50%">
-<img src="imagenes/curriculaelectrI.JPG" width="50%" height="50%">
-PERFIL DE EGRESO<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image64','','imagenes/compeelectrI.JPG',1)"><img src="imagenes/curriculaelectrI.JPG" alt="" width="934" height="612" id="Image64"></a> PERFIL DE EGRESO<br>
 
 Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.<br>
 
@@ -295,7 +332,17 @@ OPORTUNIDADES DE INSERCIÓN LABORAL.<br>
 Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.<br>
 </h2>
 </div>
-
+<div  class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://cbtis016.edu.mx/index.php/oferta-educativa/electricidad" data-role="button" >
+  <h2>CBTis16</h2>
+  </a>
+  </li>
+</ul>
+</div>
+</div>
 <div data-role="footer" align="center" data-theme="a" data-position="fixed">
 <h4>PAOLA CONSTANZA ELGUEA PEREZ</h4>
 <img src="res/android/mdpi.png" width="56" height="46">
@@ -333,9 +380,7 @@ Todas estas competencias posibilitan al egresado su incorporación al mundo labo
 Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.<br>
 
 COMPETENCIAS PROFESIONALES<br>
- <img src="imagenes/compelogis.jpg" width="50%" height="50%">
-<img src="imagenes/curriculalogis.jpg" width="50%" height="50%">
-PERFIL DE EGRESO<br>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image63','','imagenes/compelogis.jpg',1)"><img src="imagenes/curriculalogis.jpg" alt="" width="1036" height="629" id="Image63"></a> PERFIL DE EGRESO<br>
 
 Durante el proceso de formación de los cinco módulos, el estudiante desarrollara o reforzará las siguientes competencias profesionales:<br>
 
@@ -354,7 +399,17 @@ Relaciones interpersonales<br>
 
 Nuestro país presenta una amplia diversidad de procesos de producción, desde los que utilizan tecnología moderna, hasta sistemas tradicionales; este hecho contribuye a diversificar las ocupaciones, los Comités interinstitucionales de Formación Profesional decidieron utilizar los siguientes: Sectores industriales, comerciales y de servicios, públicos o privados: Escuelas, constructoras, fábricas, centros comerciales, hospitales, inmobiliarias, hoteles, instituciones de crédito, despachos contables y tiendas de autoservicio. Autoempleo</h2>
 </div>
-
+<div  class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://cbtis016.edu.mx/index.php/oferta-educativa/logistica" data-role="button" >
+  <h2>CBTis16</h2>
+  </a>
+  </li>
+</ul>
+</div>
+</div>
 <div data-role="footer" align="center" data-theme="a" data-position="fixed">
 <h4>PAOLA CONSTANZA ELGUEA PEREZ</h4>
 <img src="res/android/mdpi.png" width="56" height="46">
